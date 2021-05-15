@@ -42,7 +42,7 @@ const projectSchema = new Schema({
     end_date: {
         type: Date
     }
-});
+}, {timestamps: true, toObject: {virtuals: true}, toJSON: {virtuals: true}});
 
 const Project = mongoose.model('Project', projectSchema);
 
