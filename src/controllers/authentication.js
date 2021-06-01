@@ -51,5 +51,20 @@ const updateProfile = async (req, res) => {
     }
 }
 
+const verifyUser = async (req, res) => {
+    try {
+        res.status(200).json({data: {}, message: ``});
+    } catch (e) {
+        res.status(500).json({message: `Error: ${e.message}`});
+    }
+}
 
-module.exports = {register, login, updateProfile, getProfile, deleteProfile, updatePassword};
+const forgotPassword = async (req, res) => {
+    try {
+        res.status(200).json({data: {}, message: ``});
+    } catch (e) {
+        res.status(500).json({message: `Error: ${e.message}`});
+    }
+}
+
+module.exports = {register, login, updateProfile, getProfile, deleteProfile, updatePassword, verifyUser, forgotPassword};

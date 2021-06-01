@@ -1,10 +1,10 @@
 /**
  * @description get users of a organisation
  *
- * @param req - Request object
- * @param res - Response object
+ * @param  req - Request object
+ * @param  res - Response object
  *
- * @return users | error
+ * @returns users | error
  * */
 
 const getUsers = async (req, res) => {
